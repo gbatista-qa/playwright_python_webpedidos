@@ -1,10 +1,10 @@
-# Automação de Testes E2E com Playwright e Python
+Automação de Testes E2E com Playwright e Python
 
 Projeto de automação de testes end-to-end (E2E) desenvolvido com **Python, Playwright e Pytest**, com foco na validação automatizada de fluxos de um sistema web.
 
 O projeto utiliza o padrão **Page Object Model (POM)** para organizar os elementos e comportamentos das páginas, facilitando a manutenção, reutilização e evolução dos testes.
 
-## 🚀 Tecnologias utilizadas
+🚀 Tecnologias utilizadas
 
 * **Python**
 * **Playwright**
@@ -14,7 +14,7 @@ O projeto utiliza o padrão **Page Object Model (POM)** para organizar os elemen
 * **HTML/CSS/JavaScript** — interação com aplicação web
 * **API REST** — quando aplicável aos cenários de teste
 
-## 📁 Estrutura do projeto
+📁 Estrutura do projeto
 
 ```text
 playwright_python/
@@ -83,7 +83,7 @@ class Login:
 
 Isso evita que os testes fiquem diretamente dependentes dos detalhes dos elementos da interface.
 
-### Benefícios
+Benefícios
 
 * Maior reutilização de código
 * Melhor organização
@@ -92,9 +92,9 @@ Isso evita que os testes fiquem diretamente dependentes dos detalhes dos element
 * Maior legibilidade dos testes
 * Facilidade para adicionar novos cenários
 
-## ⚙️ Instalação
+⚙️ Instalação
 
-### 1. Clonar o repositório
+1. Clonar o repositório
 
 ```bash
 git clone URL_DO_REPOSITORIO
@@ -106,7 +106,7 @@ Entrar no diretório:
 cd playwright_python
 ```
 
-### 2. Criar ambiente virtual
+2. Criar ambiente virtual
 
 No Windows:
 
@@ -127,19 +127,19 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Instalar as dependências
+3. Instalar as dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Instalar os navegadores do Playwright
+4. Instalar os navegadores do Playwright
 
 ```bash
 playwright install
 ```
 
-## ▶️ Executando os testes
+▶️ Executando os testes
 
 Para executar todos os testes:
 
@@ -171,7 +171,7 @@ Também é possível executar um teste específico:
 pytest --headed --browser=chromium tests/test_pedido_atacado.py
 ```
 
-## 🔎 Debug dos testes
+🔎 Debug dos testes
 
 O Playwright permite pausar a execução utilizando:
 
@@ -192,7 +192,7 @@ def test_pedido(page):
 
 Ao executar o teste em modo `headed`, o Playwright abrirá o Inspector, permitindo analisar os elementos da página e os locators utilizados.
 
-## 🧪 Estratégia de automação
+🧪 Estratégia de automação
 
 Os testes são estruturados buscando validar fluxos reais de utilização do sistema.
 
@@ -211,7 +211,7 @@ Entre os fluxos automatizados estão:
 
 Novos cenários podem ser adicionados conforme a evolução do projeto.
 
-## 🎯 Objetivos do projeto
+🎯 Objetivos do projeto
 
 O projeto tem como principais objetivos:
 
@@ -223,9 +223,9 @@ O projeto tem como principais objetivos:
 * Facilitar a execução dos testes de regressão;
 * Criar uma estrutura escalável de automação.
 
-## 📌 Boas práticas utilizadas
+📌 Boas práticas utilizadas
 
-### Locators
+Locators
 
 Priorizar locators estáveis e baseados na semântica da aplicação:
 
@@ -245,15 +245,15 @@ Em situações específicas, utilizar:
 page.locator("#id_elemento")
 ```
 
-### Reutilização
+Reutilização
 
 Funcionalidades utilizadas por vários testes devem ser encapsuladas em classes ou métodos reutilizáveis.
 
-### Separação de responsabilidades
+Separação de responsabilidades
 
 Os testes devem representar **o que está sendo validado**, enquanto as classes do Page Object devem concentrar **como interagir com a aplicação**.
 
-## 📈 Próximos passos
+ 📈 Próximos passos
 
 Possíveis evoluções para o projeto:
 
@@ -269,12 +269,9 @@ Possíveis evoluções para o projeto:
 * [ ] Melhorar tratamento de logs
 * [ ] Aumentar cobertura dos fluxos críticos
 
-## 👨‍💻 Autor
+ 👨‍💻 Autor
 
 **Gustavo Batista**
 
 Projeto desenvolvido para prática e evolução em **Quality Assurance (QA), automação de testes e desenvolvimento de software**, utilizando Python, Playwright e Pytest.
 
----
-
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
